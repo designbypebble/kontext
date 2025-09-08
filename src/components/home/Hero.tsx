@@ -8,7 +8,7 @@ import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { SecondaryButton } from "@/components/ui/SecondaryButton";
 import Link from "next/link";
 
-import SectionAppearAnimation from "../animations/SectionAppear";
+import SectionAppearAnimation from "@/components/animations/SectionAppear";
 import { HeroCenterFlexGrow } from "./HeroFlexGrow";
 
 export default function Hero() {

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import LayoutWrapper from "../ui/LayoutWrapper";
+import LayoutWrapper from "@/components/ui/LayoutWrapper";
 import hero_dashaboard from "@/assets/images/hero_dashboard.svg";
-import SectionAppearAnimation from "../animations/SectionAppear";
+import SectionAppearAnimation from "@/components/animations/SectionAppear";
 export default function DashboardTable() {
   return (
     <LayoutWrapper>

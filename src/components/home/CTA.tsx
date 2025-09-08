@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import LayoutWrapper from "../ui/LayoutWrapper";
+import LayoutWrapper from "@/components/ui/LayoutWrapper";
 import { Tag } from "@/components/ui/Tag";
 import cta_background from "@/assets/images/cta_background.svg";
 import { H1 } from "@/components/ui/typography/H1";

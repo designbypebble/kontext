@@ -1,4 +1,4 @@
-import SectionAppearAnimation from "../animations/SectionAppear";
+import SectionAppearAnimation from "@/components/animations/SectionAppear";
 import Divider from "./Divider";
 import GridCircleCouple from "./GridCircleCouple";
 import LayoutWrapper from "./LayoutWrapper";
@@ -9,20 +9,20 @@ export default function Navbar() {
     <SectionAppearAnimation
       initialY={-20}
       delay={0}
-      className="w-full flex flex-col items-center relative"
+      className="w-full flex flex-col items-center z-10 relative "
     >
-      <LayoutWrapper className="lg:px-[66px]">
-        <nav className="w-full py-4 px-4 flex justify-between">
+      <LayoutWrapper className="lg:px-[66px] ">
+        <nav className="w-full py-4 px-4 flex justify-between bg-background/60 backdrop-blur-md">
           <LogoFull className="w-[120px]" />
           <NavButton />
         </nav>
       </LayoutWrapper>
-      <div className="w-full h-[1px] bg-gridline" />
-      <div className="w-full flex justify-between items-center py-4 px-4 max-w-[1732px]">
+      <div className="w-full h-[1px] bg-gridline " />
+      <div className="w-full flex justify-between items-center py-4 px-4 max-w-[1732px] bg-background/60">
         <Divider className="!w-[120px]" />
         <Divider className="!w-[120px]" />
       </div>
-      <LayoutWrapper>
+      <LayoutWrapper className="backdrop-blur-md">
         <div className="w-full flex justify-between">
           <GridCircleCouple />
           <GridCircleCouple />

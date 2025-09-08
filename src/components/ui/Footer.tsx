@@ -7,7 +7,7 @@ import { DotSquare } from "./GridCircleCouple";
 import Divider from "./Divider";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import SectionAppearAnimation from "../animations/SectionAppear";
+import SectionAppearAnimation from "@/components/animations/SectionAppear";
 
 export default function Footer() {
   const docsLinks = [
