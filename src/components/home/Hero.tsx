@@ -6,6 +6,7 @@ import { H1 } from "@/components/ui/typography/H1";
 import { P } from "@/components/ui/typography/P";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { SecondaryButton } from "@/components/ui/SecondaryButton";
+import Link from "next/link";
 export default function Hero() {
   return (
     <LayoutWrapper>
@@ -22,9 +23,16 @@ export default function Hero() {
               Make your AI apps personal, secure, and trusted in minutes.
             </P>
             <div className="flex w-full gap-2.5 justify-center md:w-[336px] max-md:flex-col">
-              <SecondaryButton className="flex-1">
-                Read The Docs
-              </SecondaryButton>
+              <Link
+                className="flex-1 flex"
+                href={"https://docs.kontext.dev/documentation/introduction"}
+              >
+                {" "}
+                <SecondaryButton className="flex-1">
+                  Read The Docs
+                </SecondaryButton>
+              </Link>
+
               <PrimaryButton className="flex-1">Get Started</PrimaryButton>
             </div>
           </div>
