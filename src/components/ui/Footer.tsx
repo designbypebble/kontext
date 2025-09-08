@@ -26,6 +26,7 @@ export default function Footer() {
     { label: "Instagram", href: "https://www.instagram.com/kontext.dev" },
     { label: "LinkedIn", href: "https://www.linkedin.com/company/co-browser/" },
     { label: "Twitter / X", href: "https://x.com/cobrowser" },
+    { label: "TikTok", href: "http://www.tiktok.com/@kontext_dev" },
   ];
 
   const footerRef = useRef<HTMLDivElement>(null);

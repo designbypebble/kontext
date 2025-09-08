@@ -22,7 +22,7 @@ export function Tag({
   className,
   speedMs = 100,
   startDelayMs = 0,
-  holdMs = 2500,
+  holdMs = 1500,
   loop = true,
 }: TagProps) {
   const safeText = String(text ?? "");
