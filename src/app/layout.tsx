@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Kontext",
-  description: "",
+  description: "The context layer for AI apps.",
 };
 
 export default function RootLayout({

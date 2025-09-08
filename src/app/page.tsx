@@ -1,6 +1,7 @@
 import DashboardTable from "@/components/home/DashboardTable";
 import Hero from "@/components/home/Hero";
 import Divider from "@/components/ui/Divider";
+import Footer from "@/components/ui/Footer";
 import { DotSquare } from "@/components/ui/GridCircleCouple";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <Divider />
         <DashboardTable />
         <DotSquare className="h-[32px]" />
+        <Footer />
       </main>
     </div>
   );
