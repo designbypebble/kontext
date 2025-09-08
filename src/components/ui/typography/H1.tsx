@@ -9,7 +9,7 @@ export function H1({ className, children, ...props }: H1Props) {
   return (
     <h1
       className={clsx(
-        "max-w-full text-6xl font-medium leading-[1.2em] capitalize",
+        "max-w-full text-6xl font-medium leading-[1.2em] capitalize max-md:text-4xl",
         className
       )}
       {...props}

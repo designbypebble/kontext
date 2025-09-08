@@ -9,7 +9,7 @@ import { SecondaryButton } from "@/components/ui/SecondaryButton";
 export default function Hero() {
   return (
     <LayoutWrapper>
-      <div className="w-full flex h-[439px]">
+      <div className="w-full flex md:h-[439px] max-md:px-6 max-md:py-5">
         <StripesBarSVG />
         <HeroPanel />
         <div className="flex-1 self-stretch flex flex-col items-center justify-center max-w-full">
