@@ -27,7 +27,7 @@ export default function Hero() {
               The <span className="text-accent">context</span> layer for AI
               apps.
             </H1>
-            <P className="w-[375px]">
+            <P className="w-[375px] text-center">
               Make your AI apps personal, secure, and trusted in minutes.
             </P>
             <div className="flex w-full gap-2.5 justify-center md:w-[440px] max-md:flex-col">

@@ -1,3 +1,4 @@
+import CTA from "@/components/home/CTA";
 import DashboardTable from "@/components/home/DashboardTable";
 import Hero from "@/components/home/Hero";
 import Divider from "@/components/ui/Divider";
@@ -11,7 +12,8 @@ export default function Home() {
         <Hero />
         <Divider />
         <DashboardTable />
-        <DotSquare className="h-[32px]" />
+        <DotSquare className="h-[90px]" />
+        <CTA />
         <Footer />
       </main>
     </div>

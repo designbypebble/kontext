@@ -23,16 +23,16 @@ export default function Footer() {
 
   const socialLinks = [
     { label: "Socials", isHeader: true },
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "Twitter / X", href: "https://twitter.com" },
+    { label: "Instagram", href: "https://www.instagram.com/kontext.dev" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/co-browser/" },
+    { label: "Twitter / X", href: "https://x.com/cobrowser" },
   ];
 
   const footerRef = useRef<HTMLDivElement>(null);
   const inView = useInView(footerRef, { once: true, amount: 0.5 });
 
   return (
-    <div className="w-full flex flex-col items-center mt-32" ref={footerRef}>
+    <div className="w-full flex flex-col items-center" ref={footerRef}>
       <DotSquare className="h-[90px]" />
       <LayoutWrapper className="flex items-center">
         <Capsule />
@@ -144,6 +144,8 @@ const FooterLinkRow = ({ href, label }: { href: string; label: string }) => {
       <Link
         href={href}
         className="self-stretch p-4 border-b-[0.50px] border-black/10 inline-flex items-center gap-2.5 hover:bg-gridline/10 transition-colors group w-full"
+        target="_blank"
+        rel="noreferer noopener"
       >
         <span className="opacity-50 text-black text-base font-normal group-hover:opacity-100 transition-opacity">
           {label}
