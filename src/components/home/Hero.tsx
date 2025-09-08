@@ -1,11 +1,11 @@
 import Image from "next/image";
-import LayoutWrapper from "../ui/LayoutWrapper";
+import LayoutWrapper from "@/components/ui/LayoutWrapper";
 import hero_panel from "@/assets/images/hero_panel.svg";
 import clsx from "clsx";
-import { H1 } from "../ui/typography/H1";
-import { P } from "../ui/typography/p";
-import { PrimaryButton } from "../ui/PrimaryButton";
-import { SecondaryButton } from "../ui/SecondaryButton";
+import { H1 } from "@/components/ui/typography/H1";
+import { P } from "@/components/ui/typography/P";
+import { PrimaryButton } from "@/components/ui/PrimaryButton";
+import { SecondaryButton } from "@/components/ui/SecondaryButton";
 export default function Hero() {
   return (
     <LayoutWrapper>
