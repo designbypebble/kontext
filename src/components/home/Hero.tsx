@@ -7,14 +7,22 @@ import { P } from "@/components/ui/typography/P";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { SecondaryButton } from "@/components/ui/SecondaryButton";
 import Link from "next/link";
+
+import SectionAppearAnimation from "../animations/SectionAppear";
+import { HeroCenterFlexGrow } from "./HeroFlexGrow";
+
 export default function Hero() {
   return (
     <LayoutWrapper>
-      <div className="w-full flex md:h-[439px] max-md:px-6 max-md:py-5">
+      <SectionAppearAnimation
+        initialY={0}
+        delay={0}
+        className="w-full flex md:h-[439px] max-md:px-6 max-md:py-5 justify-center"
+      >
         <StripesBarSVG />
         <HeroPanel />
-        <div className="flex-1 self-stretch flex flex-col items-center justify-center max-w-full">
-          <div className="w-[532px] max-w-full flex flex-col gap-[12px] items-center">
+        <HeroCenterFlexGrow delay={0.35}>
+          <div className="w-[532px] max-lg:w-[65vw] max-md:w-[80vw] flex flex-col gap-[12px] items-center">
             <H1 className="text-center">
               The <span className="text-accent">context</span> layer for AI
               apps.
@@ -22,24 +30,22 @@ export default function Hero() {
             <P className="w-[375px]">
               Make your AI apps personal, secure, and trusted in minutes.
             </P>
-            <div className="flex w-full gap-2.5 justify-center md:w-[336px] max-md:flex-col">
+            <div className="flex w-full gap-2.5 justify-center md:w-[440px] max-md:flex-col">
               <Link
                 className="flex-1 flex"
-                href={"https://docs.kontext.dev/documentation/introduction"}
+                href="https://docs.kontext.dev/documentation/introduction"
               >
-                {" "}
                 <SecondaryButton className="flex-1">
                   Read The Docs
                 </SecondaryButton>
               </Link>
-
               <PrimaryButton className="flex-1">Get Started</PrimaryButton>
             </div>
           </div>
-        </div>
+        </HeroCenterFlexGrow>
         <HeroPanel className="rotate-y-180" />
         <StripesBarSVG />
-      </div>
+      </SectionAppearAnimation>
     </LayoutWrapper>
   );
 }
@@ -69,7 +75,7 @@ function HeroPanel({ className = "" }: { className?: string }) {
   return (
     <div className={clsx("max-lg:hidden flex", className)}>
       <Image alt="Hero Panel" aria-hidden src={hero_panel} className="mx-4" />
-      <div className="h-calc(100%_+_2.125rem) -mt-8.5 w-[1px] bg-gridline"></div>
+      <div className="h-calc(100%_+_2.125rem) -mt-8.5 w-[1px] bg-gridline" />
     </div>
   );
 }
