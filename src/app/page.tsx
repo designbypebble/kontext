@@ -1,6 +1,10 @@
 import CTA from "@/components/home/CTA";
 import DashboardTable from "@/components/home/DashboardTable";
 import Hero from "@/components/home/Hero";
+import Impact from "@/components/home/Impact";
+import LinkSection from "@/components/home/LinkSection";
+import Observe from "@/components/home/Observe";
+import Personalize from "@/components/home/Personalize";
 import Divider from "@/components/ui/Divider";
 import Footer from "@/components/ui/Footer";
 import { DotSquare } from "@/components/ui/GridCircleCouple";
@@ -12,7 +16,14 @@ export default function Home() {
         <Hero />
         <Divider />
         <DashboardTable />
-        <DotSquare className="h-[90px]" />
+
+        <DotSquare className="h-[30px]" />
+        <Impact />
+        <Divider />
+
+        <LinkSection/>
+        <Personalize/>
+        <Observe/>
         <CTA />
         <Footer />
       </main>
