@@ -1,5 +1,6 @@
 import CTA from "@/components/home/CTA";
 import DashboardTable from "@/components/home/DashboardTable";
+import Features from "@/components/home/Features";
 import Hero from "@/components/home/Hero";
 import Impact from "@/components/home/Impact";
 import LinkSection from "@/components/home/LinkSection";
@@ -7,7 +8,9 @@ import Observe from "@/components/home/Observe";
 import Personalize from "@/components/home/Personalize";
 import Divider from "@/components/ui/Divider";
 import Footer from "@/components/ui/Footer";
-import { DotSquare } from "@/components/ui/GridCircleCouple";
+import { GridCircle } from "@/components/ui/GridCircle";
+import { DotLine, DotSquare } from "@/components/ui/GridCircleCouple";
+import { SectionContainer } from "@/components/ui/SectionContainer";
 
 export default function Home() {
   return (
@@ -24,6 +27,17 @@ export default function Home() {
         <LinkSection/>
         <Personalize/>
         <Observe/>
+
+        <DotSquare className="h-[102px]" />
+        <SectionContainer className="h-[40px]">
+          <div className="flex w-full justify-between items-center h-full px-[214px]">
+            <div className="h-[40px] w-[0.5px] bg-gridline "></div>
+          <div className="h-[40px] w-[0.5px] bg-gridline"></div>
+          <div className="h-[40px] w-[0.5px] bg-gridline"></div>
+          </div>
+        </SectionContainer>
+        <Features/>
+        <DotLine />
         <CTA />
         <Footer />
       </main>

@@ -13,21 +13,17 @@ export default function Observe() {
         <NavItemsSection />
 
 
-        {/* Filler Div */}
-        <div className="w-[109px]"></div>
-        {/* Filler Div Ended*/}
 
-        <DashedLine height={"538px"} color="var(--color-gridline)" />
+        <div className="flex max-w-[760px] flex-1">
+          <DashedLine height={"538px"} color="var(--color-gridline)" />
 
         <div className="w-full flex justify-center items-center ">
           Observe
         </div>
 
-        <DashedLine height={"538px"} color="var(--color-gridline)" />
+        <DashedLine height={"538px"} color="var(--color-gridline)" /></div> 
 
-        {/* Filler Div */}
-        <div className="w-[109px]"></div>
-        {/* Filler Div Ended*/}
+        
 
 
         <NavItemsSection />

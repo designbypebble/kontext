@@ -42,3 +42,19 @@ export const DotSquare = ({ className = "" }: { className?: string }) => {
     </div>
   );
 };
+
+export const DotLine = ({ className = "" }: { className?: string }) => {
+  return (
+    <div className={clsx("w-full flex flex-col items-center")}>
+      <Divider />
+      <LayoutWrapper
+        className={clsx("flex flex-col justify-between", className)}
+      >
+        <div className={clsx("w-full flex justify-between relative")}>
+          <GridCircleCouple />
+          <GridCircleCouple />
+        </div>
+      </LayoutWrapper>
+    </div>
+  );
+};
