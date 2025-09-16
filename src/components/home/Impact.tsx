@@ -5,7 +5,7 @@ import { P } from "../ui/typography/P";
 import LayoutWrapper from "@/components/ui/LayoutWrapper";
 function Impact() {
   return (
-    <LayoutWrapper className="flex">
+    <LayoutWrapper className="flex items-center">
       
       <HeaderSideSection label="[ IMPACT ]" inverted={false} />
 

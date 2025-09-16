@@ -58,7 +58,7 @@ function Features() {
     <DotLine/>
 
     {/* Features Section */}
-    <LayoutWrapper className="flex flex-col lg:flex-row lg:px-[66px] max-md:px-3">
+    <LayoutWrapper className="flex flex-col lg:flex-row lg:px-[66px] px-3">
 
       
       

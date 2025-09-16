@@ -1,7 +1,7 @@
 
 
 export default function NavItemsSection(){
-return (<div className="flex flex-col p-[13px] items-center gap-2">
+return (<div className="flex flex-col p-[13px] items-center gap-2 bg-blue-300 hidden lg:flex">
 <NavItems title={1} active={true}/>
 <div className="flex-1"></div>
 <NavItems title={2} active={false}/>

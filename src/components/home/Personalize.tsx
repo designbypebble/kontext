@@ -11,7 +11,7 @@ export default function () {
   return (
     <>
       
-      <LayoutWrapper className="flex justify-between">
+      <LayoutWrapper className="flex justify-center">
         <NavItemsSection />
 
       

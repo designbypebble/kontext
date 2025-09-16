@@ -10,7 +10,7 @@ import LayoutWrapper from "@/components/ui/LayoutWrapper";
 export default function LinkSection() {
   return (
     <>
-      <LayoutWrapper className="flex justify-between">
+      <LayoutWrapper className="flex justify-center">
 
         <NavItemsSection />
 
