@@ -9,7 +9,7 @@ import { P } from "../ui/typography/P";
 export default function Observe() {
   return (
     <>
-      <LayoutWrapper className="flex">
+      <LayoutWrapper className="flex justify-between">
         <NavItemsSection />
 
 
