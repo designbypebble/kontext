@@ -10,26 +10,21 @@ import LayoutWrapper from "@/components/ui/LayoutWrapper";
 export default function LinkSection() {
   return (
     <>
-      <LayoutWrapper className="flex justify-center">
-
+      <LayoutWrapper className="flex justify-between max-lg:justify-center">
         <NavItemsSection />
 
         {/* Filler Div */}
-        {/* <div className="w-[109px]"></div> */}
+        <div className="w-[109px] max-lg:hidden"></div>
         {/* Filler Div Ended*/}
-<div className="flex-1 flex max-w-[760px]">
-   <DashedLine height={"100%"} color="var(--color-gridline)" />
-
-        <div className="flex-1 h-[537px] flex justify-center items-center ">
-          Container
+        <DashedLine height={"537px"} color="var(--color-gridline)" className="max-lg:hidden"/>
+        <div className="flex-1 min-h-[537px] flex justify-center items-center max-md:p-6">
+          <div className="flex">Container</div>
         </div>
 
-        <DashedLine height={"100%"} color="var(--color-gridline)" />
-</div>
-       
+        <DashedLine height={"537px"} color="var(--color-gridline)" className="max-lg:hidden"/>
 
         {/* Filler Div */}
-        {/* <div className="w-[109px]"></div> */}
+        <div className="w-[109px] max-lg:hidden"></div>
         {/* Filler Div Ended*/}
 
         <NavItemsSection />
@@ -37,23 +32,21 @@ export default function LinkSection() {
 
       {/* Title */}
       <SectionContainer>
-          <LayoutWrapper className="flex items-end flex-wrap justify-between px-[105px] py-[30px]">
-            <div className="flex flex-col">
-              <Tag text="01/03"></Tag>
-              <H1 className="text-accent">Link</H1>
-            </div>
-            <P className="!max-w-[351px]">
-              Integrate Kontext in 5 minutes. One simple SDK connects your app
-              to user context.
-            </P>
-          </LayoutWrapper>
+        <LayoutWrapper className="flex items-end flex-wrap justify-between max-md:px-6 px-[105px] py-[30px] ">
+          <div className="flex flex-col">
+            <Tag text="01/03"></Tag>
+            <H1 className="text-accent">Link</H1>
+          </div>
+          <P className="!max-w-[351px]">
+            Integrate Kontext in 5 minutes. One simple SDK connects your app to
+            user context.
+          </P>
+        </LayoutWrapper>
       </SectionContainer>
       {/* Title Ends */}
-      
     </>
   );
 }
-
 
 export function NavItems() {
   return (

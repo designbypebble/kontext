@@ -1,4 +1,5 @@
 // components/DashedLine.tsx
+import clsx from "clsx";
 import React from "react";
 
 interface DashedLineProps {
@@ -10,6 +11,7 @@ interface DashedLineProps {
   dash?: number;            // dash length
   gap?: number;             // gap length
   lineCap?: "butt" | "round" | "square"; // style of dash cap
+  className?: string
 }
 
 const DashedLine: React.FC<DashedLineProps> = ({
@@ -21,9 +23,11 @@ const DashedLine: React.FC<DashedLineProps> = ({
   dash = 16,
   gap = 16,
   lineCap = "butt",
+  className = "",
 }) => {
   return orientation === "vertical" ? (
     <svg
+      className={clsx(className)}
       width={typeof width === "number" ? `${width}` : width}
       height={height}
       xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +45,7 @@ const DashedLine: React.FC<DashedLineProps> = ({
     </svg>
   ) : (
     <svg
+      className={clsx(className)}
       width={width}
       height={typeof height === "number" ? `${height}` : height}
       xmlns="http://www.w3.org/2000/svg"

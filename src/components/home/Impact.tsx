@@ -13,7 +13,7 @@ function Impact() {
       <div className="w-[109px] hidden lg:block"></div>
       {/* Side Div Ended*/}
 
-      <div className="flex-1 flex justify-center items-center border-x-1 border-gridline">
+      <div className="flex-1 flex justify-center items-center border-x-[0.5px] border-gridline md:h-[371px] max-md:px-6 max-md:py-5">
         <div className="flex flex-col p-[10px] gap-4 items-center w-[532px] max-lg:w-[65vw] max-md:w-[80vw]">
           {/* Impact */}
           <div className="flex flex-row items-center">

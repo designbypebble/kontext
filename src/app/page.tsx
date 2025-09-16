@@ -30,7 +30,7 @@ export default function Home() {
 
         <DotSquare className="h-[102px]" />
         <SectionContainer className="h-[40px]">
-          <div className="flex w-full justify-center lg:justify-between items-center h-full px-[214px]">
+          <div className="flex w-full justify-center lg:justify-between items-center h-full md:px-[214px]">
             <div className="h-[40px] w-[0.5px] bg-gridline hidden lg:block"></div>
           <div className="h-[40px] w-[0.5px] bg-gridline "></div>
           <div className="h-[40px] w-[0.5px] bg-gridline hidden lg:block"></div>

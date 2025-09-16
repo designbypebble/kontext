@@ -5,7 +5,7 @@ interface props{
 
 export function HeaderSideSection({inverted = false,label="[ IMPACT ]"}:props) {
   return ( 
-    <div className="flex flex-col items-center h-[371px] w-[66px] py-[39px] px-[25px] gap-[20px] hidden lg:flex">
+    <div className="flex flex-col items-center h-auto w-[66px] py-[39px] px-[25px] gap-[20px] hidden lg:flex">
           {/* Top Line */}
           <div className="flex-1 w-[0.5px] bg-black/25"></div>
 
