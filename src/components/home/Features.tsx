@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { HeaderSideSection } from "../ui/HeaderSideSection";
-import { Tag } from "../ui/Tag";
-
-import { P } from "../ui/typography/P";
+import { HeaderSideSection } from "@/components/ui/HeaderSideSection";
+import { Tag } from "@/components/ui/Tag";
+import bento_1 from "@/assets/images/bento_1.svg";
+import bento_2 from "@/assets/images/bento_2.svg";
+import { P } from "@/components/ui/typography/P";
 import LayoutWrapper from "@/components/ui/LayoutWrapper";
-import Divider from "../ui/Divider";
-import { DotLine } from "../ui/GridCircleCouple";
+import Divider from "@/components/ui/Divider";
+import { DotLine } from "@/components/ui/GridCircleCouple";
 import clsx from "clsx";
 function Features() {
   return (
@@ -61,9 +62,12 @@ function Features() {
       <LayoutWrapper className="flex flex-col lg:flex-row lg:px-[66px] px-3">
         {/* Box 1 */}
         <div className="flex flex-1 flex-col">
-          <div className=" h-[315px] border-b-[0.5px] border-gridline justify-center items-center">
-            Img Container
-          </div>
+          <Image
+            alt=""
+            src={bento_1}
+            className="border-b-[0.5px] border-gridline justify-center items-center w-full aspect-[489/308]"
+          />
+
           <div className="flex flex-col px-8 pt-[38px] pb-[47px] gap-2">
             <div className="flex gap-2 ">
               <Image
@@ -85,9 +89,11 @@ function Features() {
         <Divider className="lg:!w-[1px] lg:!h-auto" />
         {/* Box 2 */}
         <div className="flex flex-1 flex-col">
-          <div className=" h-[315px] border-b-[0.5px] border-gridline justify-center items-center">
-            Img Container
-          </div>
+          <Image
+            alt=""
+            src={bento_2}
+            className=" border-b-[0.5px] border-gridline justify-center items-center aspect-[489/308] w-full"
+          />
           <div className="flex flex-col px-8 pt-[38px] pb-[47px] gap-2">
             <div className="flex gap-2 ">
               <Image

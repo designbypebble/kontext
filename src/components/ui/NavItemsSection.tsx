@@ -1,17 +1,17 @@
-
-
-export default function NavItemsSection(){
-return (<div className="flex flex-col p-[13px] items-center gap-2 hidden lg:flex">
-<NavItems title={1} active={true}/>
-<div className="flex-1"></div>
-<NavItems title={2} active={false}/>
-<NavItems title={3} active={false}/>
-</div>)
+export default function NavItemsSection() {
+  return (
+    <div className="flex-col p-[13px] items-center gap-2 hidden lg:flex sticky top-0">
+      <NavItems title={1} active={true} />
+      <div className="flex-1"></div>
+      <NavItems title={2} active={false} />
+      <NavItems title={3} active={false} />
+    </div>
+  );
 }
 
-interface NavItemsProps{
-    title?:number,
-    active?:boolean
+interface NavItemsProps {
+  title?: number;
+  active?: boolean;
 }
 
 export function NavItems({ title = 0, active = true }: NavItemsProps) {

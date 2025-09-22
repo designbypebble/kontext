@@ -19,6 +19,7 @@ export function VerticalGrid() {
           <div className="w-[1px] h-full bg-gridline"></div>
         </div>
       </div>
+      {/**MOBILE*/}
       <div className="lg:hidden w-full px-2 flex justify-between h-full">
         <div className="w-[1px] h-full bg-gridline"></div>
         <div className="w-[1px] h-full bg-gridline"></div>

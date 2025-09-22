@@ -148,7 +148,7 @@ const FooterLinkRow = ({ href, label }: { href: string; label: string }) => {
         target="_blank"
         rel="noreferer noopener"
       >
-        <span className="opacity-50 text-black text-base font-normal group-hover:opacity-100 transition-opacity">
+        <span className="opacity-50 text-black text-base font-normal group-hover:opacity-100 group-hover:!text-accent transition-all">
           {label}
         </span>
       </Link>

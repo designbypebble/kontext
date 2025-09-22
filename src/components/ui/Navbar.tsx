@@ -3,6 +3,7 @@ import Divider from "./Divider";
 import GridCircleCouple from "./GridCircleCouple";
 import LayoutWrapper from "./LayoutWrapper";
 import { LogoFull } from "./Logo";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -35,8 +36,11 @@ export default function Navbar() {
 
 const NavButton = () => {
   return (
-    <div className="px-7 py-2 rounded-full bg-[#00573f] font-sans text-white scale-100 hover:scale-90 ease-in-out duration-250 transition-transform cursor-pointer">
+    <Link
+      href={"https://docs.kontext.dev/documentation/quickstart"}
+      className="px-7 py-2 rounded-full bg-[#00573f] font-sans text-white scale-100 hover:scale-90 ease-in-out duration-250 transition-transform cursor-pointer"
+    >
       Get Started
-    </div>
+    </Link>
   );
 };

@@ -39,7 +39,12 @@ export default function Hero() {
                   Read The Docs
                 </SecondaryButton>
               </Link>
-              <PrimaryButton className="flex-1">Get Started</PrimaryButton>
+              <Link
+                className="flex-1 flex"
+                href={"https://docs.kontext.dev/documentation/quickstart"}
+              >
+                <PrimaryButton className="flex-1">Get Started</PrimaryButton>
+              </Link>
             </div>
           </div>
         </HeroCenterFlexGrow>

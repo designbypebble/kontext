@@ -1,0 +1,17 @@
+<svg width="66" height="324" viewBox="0 0 66 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="2.18557e-08" y1="34.75" x2="66" y2="34.75" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<line x1="2.18557e-08" y1="97.75" x2="21" y2="97.75" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<line x1="45" y1="97.75" x2="66" y2="97.75" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<line x1="2.18557e-08" y1="160.75" x2="21" y2="160.75" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<line x1="45" y1="160.75" x2="66" y2="160.75" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<line x1="2.18557e-08" y1="223.75" x2="21" y2="223.75" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<line x1="45" y1="223.75" x2="66" y2="223.75" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<line x1="33.25" y1="84" x2="33.25" y2="238" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<line x1="2.18557e-08" y1="286.75" x2="66" y2="286.75" stroke="black" stroke-opacity="0.25" stroke-width="0.5"/>
+<circle opacity="0.1" cx="33" cy="67" r="11.75" stroke="black" stroke-width="0.5"/>
+<circle opacity="0.1" cx="33" cy="256" r="11.75" stroke="black" stroke-width="0.5"/>
+<circle cx="33" cy="256" r="4.89583" fill="#00573F" stroke="black" stroke-width="0.208333"/>
+<path opacity="0.25" d="M40.3613 310.75H25.6387L33 323.5L40.3613 310.75Z" stroke="black" stroke-width="0.5"/>
+<path opacity="0.25" d="M40.3613 13.25H25.6387L33 0.5L40.3613 13.25Z" stroke="black" stroke-width="0.5"/>
+<circle cx="33" cy="67" r="4.89583" fill="#00573F" stroke="black" stroke-width="0.208333"/>
+</svg>
