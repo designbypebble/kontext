@@ -132,7 +132,7 @@ export function Tag({
     <div
       ref={ref}
       className={clsx(
-        "inline-flex items-center font-mono text-lg font-medium text-black",
+        "inline-flex items-center font-mono text-lg font-medium text-foreground",
         className
       )}
       aria-label={safeText}

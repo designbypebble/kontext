@@ -1,17 +1,20 @@
-import Image from "next/image";
 import LayoutWrapper from "@/components/ui/LayoutWrapper";
-import hero_dashaboard from "@/assets/images/hero_dashboard.svg";
 import SectionAppearAnimation from "@/components/animations/SectionAppear";
+
+import TableLoop from "@/components/home/TableLoop";
+
 export default function DashboardTable() {
   return (
-    <LayoutWrapper>
-      <SectionAppearAnimation className="w-full flex pt-5 px-6 overflow-auto md:justify-center">
-        <Image
-          src={hero_dashaboard}
-          alt="Context Based Use Input"
-          className="max-md:min-w-[600px] bg-background md:max-w-full"
-        />
+    <LayoutWrapper className="flex justify-between h-[350px] overflow-y-hidden">
+      <div className="w-[var(--grid-space)] flex self-stretch items-center justify-center max-md:hidden">
+        <div className="h-25 w-2 rounded-full border border-gridline"></div>
+      </div>
+      <SectionAppearAnimation className="flex pt-5 px-6 md:justify-center max-w-full w-[932px] mx-auto">
+        <TableLoop />
       </SectionAppearAnimation>
+      <div className="w-[var(--grid-space)] flex self-stretch items-center justify-center max-md:hidden">
+        <div className="h-25 w-2 rounded-full border border-gridline"></div>
+      </div>
     </LayoutWrapper>
   );
 }

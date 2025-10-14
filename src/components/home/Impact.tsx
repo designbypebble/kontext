@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { HeaderSideSection } from "@/components/ui/HeaderSideSection";
 import { Tag } from "@/components/ui/Tag";
-import interface_flap from "@/assets/svg/interface_flap.svg";
+import interface_flap from "@/assets/images/interface_flap.svg";
 import { P } from "@/components/ui/typography/P";
 import LayoutWrapper from "@/components/ui/LayoutWrapper";
+import SectionAppearAnimation from "@/components/animations/SectionAppear";
 
 function Impact() {
   return (
@@ -12,12 +13,17 @@ function Impact() {
 
       {/* Side Div */}
       <div className="w-[109px] hidden lg:block">
-        <Image src={interface_flap} alt="" aria-hidden />
+        <Image
+          src={interface_flap}
+          alt=""
+          aria-hidden
+          className="select-none pointer-events-none"
+        />
       </div>
       {/* Side Div Ended*/}
 
       <div className="flex-1 flex justify-center items-center border-x-[0.5px] border-gridline md:min-h-[371px] max-md:px-6 max-md:py-5 self-stretch max-w-full">
-        <div className="flex flex-col p-[10px] gap-4 items-center w-[532px] max-w-full">
+        <SectionAppearAnimation className="flex flex-col p-[10px] gap-4 items-center w-[532px] max-w-full">
           {/* Impact */}
           <div className="flex flex-row items-center">
             <div className="w-[40px] h-[1px] bg-gridline"></div>
@@ -41,12 +47,17 @@ function Impact() {
             {" "}
             See how Kontext transforms your app in three steps.
           </P>
-        </div>
+        </SectionAppearAnimation>
       </div>
 
       {/* Side Div */}
       <div className="w-[109px] hidden lg:block">
-        <Image src={interface_flap} alt="" aria-hidden />
+        <Image
+          src={interface_flap}
+          alt=""
+          aria-hidden
+          className="select-none pointer-events-none"
+        />
       </div>
       {/* Side Div Ended*/}
 

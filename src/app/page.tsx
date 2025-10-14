@@ -3,16 +3,13 @@ import DashboardTable from "@/components/home/DashboardTable";
 import Features from "@/components/home/Features";
 import Hero from "@/components/home/Hero";
 import Impact from "@/components/home/Impact";
-import LinkSection from "@/components/home/LinkSection";
-import Observe from "@/components/home/Observe";
-import Personalize from "@/components/home/Personalize";
+import Observability from "@/components/home/Observability";
 import StickyNumbering from "@/components/home/StickyNumbering";
 import Testimonials from "@/components/home/Testimonials";
 import Divider from "@/components/ui/Divider";
 import Footer from "@/components/ui/Footer";
 
 import { DotLine, DotSquare } from "@/components/ui/GridCircleCouple";
-import { SectionContainer } from "@/components/ui/SectionContainer";
 
 export default function Home() {
   return (
@@ -26,23 +23,31 @@ export default function Home() {
         <Impact />
         <Divider />
         <StickyNumbering />
-        {/* <LinkSection /> */}
-        {/* <Personalize /> */}
-        {/* <Observe /> */}
 
-        <DotSquare className="h-[102px]" />
-        <SectionContainer className="h-[40px]">
+        <DotSquare topVisible={false} className="h-[40px]">
           <div className="flex w-full justify-center lg:justify-between items-center h-full md:px-[214px]">
             <div className="h-[40px] w-[0.5px] bg-gridline hidden lg:block"></div>
             <div className="h-[40px] w-[0.5px] bg-gridline "></div>
             <div className="h-[40px] w-[0.5px] bg-gridline hidden lg:block"></div>
           </div>
-        </SectionContainer>
+        </DotSquare>
+
         <Features />
-        <DotSquare className="h-[50px]" />
+        <Observability />
+        <DotSquare bottomVisible={false} topVisible={false}>
+          <div className="w-[901px] mx-auto py-1 px-1 my-6 relative rounded-[45px] max-w-[90%] border border-gridline">
+            <div className="w-full h-[1px] bg-accent rounded-[45px]" />
+          </div>
+        </DotSquare>
+        <DotSquare className="h-14" />
         <Testimonials />
         <DotLine />
         <CTA />
+        <DotSquare bottomVisible={false}>
+          <div className="w-[901px] mx-auto py-1 px-1 my-6 relative rounded-[45px] max-w-[90%] border border-gridline">
+            <div className="w-full h-[1px] bg-accent rounded-[45px]" />
+          </div>
+        </DotSquare>
         <Footer />
       </main>
     </div>

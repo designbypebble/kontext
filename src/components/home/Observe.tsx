@@ -18,7 +18,7 @@ export default function Observe() {
           color="var(--color-gridline)"
           className="max-lg:hidden"
         />
-        <div className="flex flex-1 min-h-[545px] flex justify-center items-center max-md:p-6">
+        <div className="flex-1 min-h-[545px] flex justify-center items-center max-md:p-6">
           <div className="flex">Observe</div>
         </div>
         <DashedLine

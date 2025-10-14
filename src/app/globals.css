@@ -5,6 +5,8 @@
   --foreground: #171717;
   --color-accent: #00573f;
   --color-gridline: #d9d9d9;
+  --grid-space: 66px;
+  --color-svg-white: #fff;
 }
 
 @theme inline {
@@ -14,17 +16,43 @@
   --color-gridline: var(--color-gridline);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --grid-space: var(--grid-space);
 }
 
 /* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #141414;
     --foreground: #ededed;
+    --color-gridline: #3d3d3d;
+    --color-accent: #006347;
+    --color-svg-white: #3d3d3d;
   }
-} */
-
+}
+ */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px; /* md and below */
+  }
+}
+
+.truncate-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+.prose ul {
+  list-style-position: inside !important;
+  list-style: disc !important;
+}
+.prose ol {
+  list-style-position: inside !important;
+  list-style: disc !important;
 }

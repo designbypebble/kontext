@@ -1,6 +1,4 @@
 import DashedLine from "@/components/ui/DashedLine";
-import Divider from "@/components/ui/Divider";
-import NavItemsSection from "@/components/ui/NavItemsSection";
 import { SectionContainer } from "@/components/ui/SectionContainer";
 import { Tag } from "@/components/ui/Tag";
 import { H1 } from "@/components/ui/typography/H1";

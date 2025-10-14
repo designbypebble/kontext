@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import footer_logo from "@/assets/images/footer_logo.svg";
 import LayoutWrapper from "./LayoutWrapper";
 import { DotSquare } from "./GridCircleCouple";
 import Divider from "./Divider";
@@ -37,8 +35,11 @@ export default function Footer() {
       <DotSquare className="h-[90px]" />
       <LayoutWrapper className="flex items-center">
         <Capsule />
-        <SectionAppearAnimation className="flex-1 max-lg:px-3 max-lg:w-full">
-          <Image src={footer_logo} alt="KONTEXT" className="w-full" />
+        <SectionAppearAnimation className="flex-1 p-5 max-lg:w-full">
+          <iframe
+            src="https://cdn.lottielab.com/l/95xRzz4P2hk9hM.html"
+            className="aspect-[962/147] w-full"
+          ></iframe>
         </SectionAppearAnimation>
         <Capsule />
       </LayoutWrapper>
@@ -67,7 +68,7 @@ export default function Footer() {
 
       <LayoutWrapper className="lg:px-[66px] ">
         <div className="w-full flex gap-3 px-3 py-2.5 items-center">
-          <p className="opacity-30 text-black text-sm font-normal">
+          <p className="opacity-30 text-foreground text-sm font-normal">
             © 2025 Kontext
           </p>
           <Divider className="flex-1" />
@@ -80,7 +81,7 @@ export default function Footer() {
 }
 
 const Capsule = () => (
-  <div className="w-[66px] flex flex-col items-center justify-center max-lg:hidden">
+  <div className="w-[var(--grid-space)] flex flex-col items-center justify-center max-lg:hidden">
     <div className="w-1.5 h-24 rounded-full border-[0.50px] border-black/25" />
   </div>
 );
@@ -103,7 +104,9 @@ const DocumentationLinksList = ({ items }: { items: FooterItem[] }) => (
           key={i}
           className="self-stretch p-4 border-b-[0.50px] border-black/10 inline-flex items-center gap-2.5"
         >
-          <div className="text-black text-base font-medium">{item.label}</div>
+          <div className="text-foreground text-base font-medium">
+            {item.label}
+          </div>
         </div>
       ) : (
         <FooterLinkRow key={i} href={item.href || "#"} label={item.label} />
@@ -120,7 +123,9 @@ const SocialLinksList = ({ items }: { items: FooterItem[] }) => (
           key={i}
           className="self-stretch p-4 border-b-[0.50px] border-black/10 inline-flex items-center gap-2.5"
         >
-          <div className="text-black text-base font-medium">{item.label}</div>
+          <div className="text-foreground text-base font-medium">
+            {item.label}
+          </div>
         </div>
       ) : (
         <FooterLinkRow key={i} href={item.href || "#"} label={item.label} />
@@ -148,7 +153,7 @@ const FooterLinkRow = ({ href, label }: { href: string; label: string }) => {
         target="_blank"
         rel="noreferer noopener"
       >
-        <span className="opacity-50 text-black text-base font-normal group-hover:opacity-100 group-hover:!text-accent transition-all">
+        <span className="opacity-50 text-foreground text-base font-normal group-hover:opacity-100 group-hover:!text-accent transition-all">
           {label}
         </span>
       </Link>

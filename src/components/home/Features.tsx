@@ -2,12 +2,12 @@ import Image from "next/image";
 import { HeaderSideSection } from "@/components/ui/HeaderSideSection";
 import { Tag } from "@/components/ui/Tag";
 import bento_1 from "@/assets/images/bento_1.svg";
-import bento_2 from "@/assets/images/bento_2.svg";
 import { P } from "@/components/ui/typography/P";
 import LayoutWrapper from "@/components/ui/LayoutWrapper";
 import Divider from "@/components/ui/Divider";
 import { DotLine } from "@/components/ui/GridCircleCouple";
-import clsx from "clsx";
+
+import SectionAppearAnimation from "@/components/animations/SectionAppear";
 function Features() {
   return (
     <>
@@ -20,7 +20,7 @@ function Features() {
         </div>
         {/* Side Div Ended*/}
 
-        <div className="flex-1 flex justify-center items-center border-x-[0.5px] border-gridline md:h-[340px] max-md:px-6 max-md:py-5">
+        <SectionAppearAnimation className="flex-1 flex justify-center items-center border-x-[0.5px] border-gridline md:h-[340px] max-md:px-6 max-md:py-5">
           <div className="w-[532px] max-lg:w-[65vw] max-md:w-[80vw] flex flex-col p-[10px] gap-4 items-center">
             {/* Features */}
             <div className="flex flex-row items-center">
@@ -46,7 +46,7 @@ function Features() {
               The essentials for AI apps, ready from the start.
             </P>
           </div>
-        </div>
+        </SectionAppearAnimation>
 
         {/* Side Div */}
         <div className="w-[147.5px] hidden lg:block">
@@ -62,13 +62,15 @@ function Features() {
       <LayoutWrapper className="flex flex-col lg:flex-row lg:px-[66px] px-3">
         {/* Box 1 */}
         <div className="flex flex-1 flex-col">
-          <Image
-            alt=""
-            src={bento_1}
-            className="border-b-[0.5px] border-gridline justify-center items-center w-full aspect-[489/308]"
-          />
+          <SectionAppearAnimation className="w-full ">
+            <Image
+              alt=""
+              src={bento_1}
+              className=" justify-center items-center w-full aspect-[489/308] -mt-[1px]"
+            />
+          </SectionAppearAnimation>
 
-          <div className="flex flex-col px-8 pt-[38px] pb-[47px] gap-2">
+          <div className="flex flex-col px-8 pt-[38px] pb-[47px] gap-2 border-t-[0.5px] border-gridline">
             <div className="flex gap-2 ">
               <Image
                 alt="rocket"
@@ -79,7 +81,7 @@ function Features() {
               />
               <p className="text-xl font-medium">Ship faster</p>
             </div>
-            <p className="text-lg leading-[1.5] text-black/50">
+            <p className="text-lg leading-[1.5] text-foreground/50">
               Kontext saves you months of development effort and continuous
               maintenance.
             </p>
@@ -89,11 +91,10 @@ function Features() {
         <Divider className="lg:!w-[1px] lg:!h-auto" />
         {/* Box 2 */}
         <div className="flex flex-1 flex-col">
-          <Image
-            alt=""
-            src={bento_2}
-            className=" border-b-[0.5px] border-gridline justify-center items-center aspect-[489/308] w-full"
-          />
+          <iframe
+            src="https://cdn.lottielab.com/l/3JRvWNBytWGQnB.html"
+            className="w-full aspect-[489/308] border-b-[0.5px] border-gridline "
+          ></iframe>
           <div className="flex flex-col px-8 pt-[38px] pb-[47px] gap-2">
             <div className="flex gap-2 ">
               <Image
@@ -105,7 +106,7 @@ function Features() {
               />
               <p className="text-xl font-medium">Context APIs</p>
             </div>
-            <p className="text-lg leading-[1.5] text-black/50">
+            <p className="text-lg leading-[1.5] text-foreground/50">
               A clean SDK to bring user context into your app securely.
             </p>
           </div>
@@ -161,11 +162,5 @@ const DiagonalLines: React.FC<DiagonalLinesProps> = ({
       </defs>
       <rect width="100%" height="100%" fill={`url(#${patternId})`} />
     </svg>
-  );
-};
-
-const Line = ({ className = "" }: { className?: string }) => {
-  return (
-    <div className={clsx("w-full h-[0.5px] bg-gridline", className)}></div>
   );
 };

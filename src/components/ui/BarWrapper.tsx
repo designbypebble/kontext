@@ -8,5 +8,7 @@ export default function BarWrapper({
   children: ReactNode;
   className?: string;
 }) {
-  return <div className={clsx("w-[66px]", className)}>{children}</div>;
+  return (
+    <div className={clsx("w-[var(--grid-space)]", className)}>{children}</div>
+  );
 }

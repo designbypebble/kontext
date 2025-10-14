@@ -17,7 +17,7 @@ export default function Hero() {
       <SectionAppearAnimation
         initialY={0}
         delay={0}
-        className="w-full flex md:h-[439px] max-md:px-6 max-md:py-5 justify-center"
+        className="w-full flex md:h-[439px] max-md:px-6 max-md:py-20 justify-center"
       >
         <StripesBarSVG />
         <HeroPanel />
@@ -57,7 +57,7 @@ export default function Hero() {
 
 export function StripesBarSVG() {
   return (
-    <div className="w-[66px] h-full max-lg:hidden">
+    <div className="w-[var(--grid-space)] h-full max-lg:hidden">
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern
@@ -79,7 +79,12 @@ export function StripesBarSVG() {
 function HeroPanel({ className = "" }: { className?: string }) {
   return (
     <div className={clsx("max-lg:hidden flex", className)}>
-      <Image alt="Hero Panel" aria-hidden src={hero_panel} className="mx-4" />
+      <Image
+        alt="Hero Panel"
+        aria-hidden
+        src={hero_panel}
+        className="mx-4 select-none pointer-events-none"
+      />
       <div className="h-calc(100%_+_2.125rem) -mt-8.5 w-[1px] bg-gridline" />
     </div>
   );

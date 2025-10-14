@@ -8,7 +8,7 @@ type PProps = HTMLAttributes<HTMLParagraphElement> & {
 export function P({ className, children, ...props }: PProps) {
   return (
     <p
-      className={clsx("max-w-full text-[18px] text-black", className)}
+      className={clsx("max-w-full text-[1.15rem] text-foreground", className)}
       {...props}
     >
       {children}

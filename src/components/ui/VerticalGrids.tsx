@@ -10,11 +10,11 @@ export function VerticalGrid() {
       className="absolute w-full h-full top-0 left-0 pointer-events-none"
     >
       <div className="max-w-full h-full flex w-[1111px] 2xl:w-[1440px] mx-auto justify-between max-lg:hidden">
-        <div className="w-[66px] h-full flex justify-between">
+        <div className="w-[var(--grid-space)] h-full flex justify-between">
           <div className="w-[1px] h-full bg-gridline"></div>
           <div className="w-[1px] h-full bg-gridline"></div>
         </div>
-        <div className="w-[66px] h-full flex justify-between">
+        <div className="w-[var(--grid-space)] h-full flex justify-between">
           <div className="w-[1px] h-full bg-gridline"></div>
           <div className="w-[1px] h-full bg-gridline"></div>
         </div>
